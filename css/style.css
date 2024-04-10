@@ -1,0 +1,345 @@
+/* Подготовка */
+:root {
+    --accent-color: #34547A;
+    --silver-color: #EEEFF1;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+
+/* Начало работы */
+/* Шапка */
+.header {
+    background-color: #EEEFF1;
+    min-height: 690px;
+    margin-bottom: 114px;
+}
+.header__title {
+    padding-top: 48px;
+    margin-bottom: 134px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 85px;
+    height: 38px;
+
+}
+
+.navbar ul {
+    padding-left: 0;
+    display: flex;
+    min-width: 620px;
+    gap: 45px
+
+}
+
+.navbar ul li {
+    font-size: 16px;
+    text-transform: uppercase;
+    list-style: none;
+    letter-spacing: 1.5px;
+}
+
+.content_flex {
+
+}
+
+.content__flex-item {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.content-image {
+    width: 407px;
+    height: 260px;
+    margin-right: 112px;
+    padding-top: 23px;
+    padding-left: 53px;
+}
+
+.content-item {
+    max-width: 515px;
+}
+.text-h2 {    
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+    margin-bottom: 44px;
+}
+.text-p {
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 52px;
+}
+.btn {
+    width: 225px;
+    height: 65px;
+    background-color: var(--accent-color);
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+/* Обо мне/Как я работаю/Хотите веб-сайт */
+.aboutUs {
+}
+
+.aboutUs_item {
+    width: 540px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.text-h3 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+/* Projects */
+.project {
+    background-color: var(--accent-color);
+    margin-bottom: 100px;
+}
+
+.project_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 250px;
+}
+
+.project_items {
+    display: flex;
+    align-items: flex-end;  
+}
+
+.project_img {
+    margin-right: 20px;
+}
+
+.project_items-text {
+    color: #fff;
+}
+
+.text-h4 {
+    font-weight: 300;
+    font-size: 21px;
+}
+
+.project-text {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Статистика */
+
+.section_table {
+    margin-bottom: 100px;
+}
+
+.table {
+
+}
+
+.table_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table_items-statics {
+
+}
+
+.h2-margin-bottom {
+    margin-bottom: 50px;
+}
+
+.table_statistic-parent {
+    width: 445px;
+    height: 4px;
+    background-color: #C4C4C4;
+    margin-bottom: 30px;
+}
+
+.text-color-p {
+    color: #727272;
+    margin-bottom: 20px;
+}
+
+.table_statistic-child {
+    width: 80%;
+    height: 100%;
+    background-color: var(--accent-color);
+}
+
+.human {
+
+}
+/* О работе */
+.work {
+    min-height: 1000px;
+    margin-bottom: 27px;
+}
+.work-items {
+    text-align: center;
+}
+
+.text-h3-pt {
+    padding-top: 85px;
+}
+
+.text-p-mb {
+    margin-bottom: 45px;
+}
+
+.work-items-bg {
+    width: 1100px;
+    height: 600px;
+    background-image: url(../img/work.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Портфолио */
+
+.portfolio {
+    margin-bottom: 62px;
+}
+
+.portfolio_grid {
+}
+
+.portfolio_grid-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 0;
+
+}
+
+.portfolio_grid-img {
+
+}
+
+/* Microsoft */
+.microsoft {
+    margin-bottom: 100px;
+
+}
+
+.microsoft_grid {
+
+}
+
+.microsoft_grid-items {    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+/* Форма обратной связи */
+.form {
+    background-color: var(--silver-color);
+    min-height: 762px;
+}
+.form_items {
+}
+.aboutUs_item {
+}
+.text-h3 {
+}
+.text-p {
+}
+.form_items-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+}
+input{
+    padding: 0 20px;
+}
+textarea {
+    padding: 15px 20px;
+}
+.name, .e-mail {
+    width: 255px;
+    height: 50px;
+}
+.name, .e-mail, .message{
+    border: none;
+    background-color: #fff;
+}
+.text-h3-pt {
+    padding-top: 94px;
+}
+#massage {
+    margin-bottom: 26px;
+}
+#btn {
+    width: 190px;
+    height: 55px;
+}
+/* Подвал */
+.footer {
+    background-color: var(--accent-color);
+}
+
+.footer_items {    
+    min-height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.creater {
+    color: #fff;
+}
+
+.footer-text-p {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.social-icons img {
+    margin-left: 20px;
+}
+.social-icons img:first-child {
+    margin-left: 0px;
+}
